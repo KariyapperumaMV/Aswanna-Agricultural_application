@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/feedbackid1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Feedback"
+        android:textAlignment="center"
+        android:textColor="@color/greenappall"
+        android:textSize="28dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/feedbackEditText"
+        android:layout_width="368dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="20dp"
+        android:hint="Enter your feedback"
+        android:inputType="textMultiLine"
+        android:lines="4" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>

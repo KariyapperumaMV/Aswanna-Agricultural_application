@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_90sdp"
+    android:background="@drawable/request_background"
+    android:padding="@dimen/_2sdp"
+    android:layout_marginTop="10dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/investorImageI"
+        android:layout_width="157dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="@dimen/_10ssp"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:layout_marginRight="@dimen/_10ssp"
+        android:layout_weight="1"
+        android:background="@drawable/background_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/investorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17sdp"
+            android:textStyle="bold"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/projectID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/projectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="TextView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_2sdp">
+
+            <ImageView
+                android:id="@+id/acceoptI"
+                android:layout_width="118dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="@dimen/_47ssp"
+                android:layout_marginTop="@dimen/_4ssp"
+                app:srcCompat="@drawable/accept_btn_image" />
+
+            <ImageView
+                android:id="@+id/rejectI"
+                android:layout_width="106dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="@dimen/_12ssp"
+                android:layout_marginTop="@dimen/_4sdp"
+                app:srcCompat="@drawable/reject_btn_image" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/aswanna_logo"
+        android:label="ASWANNA"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.Aswanna"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activities.my_projects_Farmer_side"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Farmer_Request_View"
+            android:exported="false" />
+        <activity
+            android:name=".Massage_Main_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ChatBotMain"
+            android:exported="false">
+
+       </activity>
+
+        <activity
+            android:name=".Activities.NotificationManagement"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.InvestorHome"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ProposalAdd"
+            android:exported="false" />
+        <activity
+            android:name=".userLisst"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_View"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activities.ChatActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+      
+
+         <activity
+
+            android:name=".Activities.SignInActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".SendNotificationPack.MyFireBaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Farmer_Home_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ChatActivity_FarmerSide"
+            android:exported="false" />
+        <activity
+
+            android:name=".Activities.InvestorMyProjects"
+              android:exported="false" >
+
+          </activity>
+        <activity
+            android:name=".Activities.SearchResultInvestor"
+            android:exported="false" > <intent-filter>
+            <action android:name="com.google.firebase.MESSAGING_EVENT" />
+        </intent-filter></activity>
+        
+      <activity
+            android:name=".Activities.testaa"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.InvestorPostView"
+            android:exported="false" ></activity>
+        
+          <activity
+
+            android:name=".Activities.FarmerProposalList"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activities.ChatActivity_previousOne"
+            android:exported="false" />
+
+
+      
+
+<!--        <service-->
+<!--            android:name=".firebase.MessageService"-->
+<!--            android:exported="false">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+
+        
+           
+      
+         <activity
+              android:name=".Activities.SignUpActivity"
+            android:exported="false" />
+
+
+
+    </application>
+
+</manifest>

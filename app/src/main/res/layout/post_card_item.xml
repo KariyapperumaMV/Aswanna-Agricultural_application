@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="275dp"
+    android:layout_marginBottom="10dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:backgroundTint="#E5E4E4"
+        app:cardCornerRadius="20dp"
+        app:contentPadding="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/pAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="74dp"
+                android:fontFamily="@font/poppins_black"
+                android:text="Rs. 100500.00"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toStartOf="@+id/pProjectImage"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pProfit" />
+
+            <TextView
+                android:id="@+id/pProfit"
+                android:layout_width="128dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="74dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="Profit -40%"
+                android:textColor="#E6AC33"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/pProjectImage"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pLocation" />
+
+            <TextView
+                android:id="@+id/pLocation"
+                android:layout_width="128dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="74dp"
+                android:fontFamily="@font/regular"
+                android:text="Nuwara Eliya"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/pProjectImage"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pProjectName" />
+
+            <TextView
+                android:id="@+id/pProjectName"
+                android:layout_width="174dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_black"
+                android:text="Green Chilly"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pFarmerLeve" />
+
+            <TextView
+                android:id="@+id/pFarmerLeve"
+                android:layout_width="94dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/greenappall"
+                android:fontFamily="@font/poppins_black"
+                android:text="Level 4"
+                android:textColor="#228C4C"
+                android:textSize="24dp"
+                app:layout_constraintStart_toEndOf="@+id/cardView2"
+                app:layout_constraintTop_toBottomOf="@+id/pUserName" />
+
+            <TextView
+                android:id="@+id/pUserName"
+                android:layout_width="111dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="147dp"
+                android:fontFamily="@font/regular"
+                android:text="Saman Silva"
+                android:textSize="17dp"
+                app:layout_constraintEnd_toStartOf="@+id/pPostedDate"
+                app:layout_constraintStart_toEndOf="@+id/cardView2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/pPostedDate"
+                android:layout_width="58dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="21 nov 2023"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/pViewButton"
+                android:layout_width="339dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="@color/greenappall"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="View More"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="57dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="#E81C1C"
+                app:cardCornerRadius="24dp"
+                app:layout_constraintEnd_toStartOf="@+id/pUserName"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/pUserImage"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="185dp"
+                android:layout_height="185dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="25dp"
+                android:backgroundTint="#E4E3E3"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/pViewButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pProjectName"
+                app:layout_constraintTop_toBottomOf="@+id/pPostedDate">
+
+                <ImageView
+                    android:id="@+id/pProjectImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

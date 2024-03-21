@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="greenappall">#2E976A</color>
+    <color name="red1">#FB4B4B</color>
+
+
+    <color name="bg_color_default">#FFFFFF</color>
+    <color name="bg_color_pressed">#FF5722</color>
+    <color name="text_color_default">#000000</color>
+    <color name="text_color_pressed">#FFFFFF</color>
+
+
+
+        <color name="colorPrimary">#3F51B5</color>
+        <color name="BavanthaGreen">#58D565</color>
+        <color name="bavanthagreenV2">#228A4C</color>
+        <color name="colorPrimaryDark">#303F9F</color>
+        <color name="colorAccent">#FF4081</color>
+        <color name="colorBackground">#F5F5F5</color>
+        <color name="colorText">#228D4C</color>
+        <color name="colorButtonBackground">#FF5722</color>
+        <color name="BtnColour">#228D4C</color>
+        <color name="green">#228D4C</color>
+    <color name="red">#DA0D0D</color>
+    <color name="chip">#E6E5E5</color>
+    <!-- res/values/colors.xml -->
+
+        <color name="trackBackground">#C0C0C0</color>
+        <color name="trackColor">#FF5733</color>
+
+
+
+
+
+
+    <color name="purple_200">#013B8A</color>
+    <color name="purple_500">#013B8A</color>
+    <color name="purple_700">#013B8A</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+
+    <color name="back_color">#13253D</color>
+    <color name="bot_back_color">#203757</color>
+    <color name="user_back_color">#6965FF</color>
+    <color name="fab_back_color">#6B6AFF</color>
+
+</resources>

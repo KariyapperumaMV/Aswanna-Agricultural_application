@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    android:clipToPadding="false"
+    android:overScrollMode="ifContentScrolls"
+    android:padding="@dimen/_24sdp"
+    android:scrollbarSize="0dp"
+    android:scrollbars="vertical"
+    tools:context=".Activities.SignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="332dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="Welcome Back !"
+            android:textAlignment="textStart"
+            android:textColor="#050505"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Login to continue.."
+            android:textAlignment="gravity"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="264dp"
+            android:layout_height="152dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/aswanna_logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:text=" Email"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/input_background"
+            android:ems="10"
+            android:hint="Enter Email Address"
+            android:inputType="text"
+            android:paddingLeft="18dp"
+            android:textColor="#050505"
+            android:textColorHint="#736E6E" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" Password"
+            android:textColor="#020202"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input_background"
+            android:ems="10"
+            android:hint="Enter Pasword"
+            android:inputType="textPassword"
+            android:paddingLeft="18dp"
+            android:textColor="#050505"
+            android:textColorHint="#736E6E" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="333dp"
+            android:layout_height="51dp"
+            android:text="Froget password"
+            android:textAlignment="viewEnd"
+            android:textColor="#0C0C0C"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <FrameLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:animateLayoutChanges="true">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signinBtn"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#228D4C"
+
+                android:text="SIGN IN"
+                android:textColor="#FEFEFE"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="221dp"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account ?"
+                android:textAlignment="viewEnd"
+                android:textColor="#050505"
+                android:textColorHint="#020202"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/signUptext"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="SIGN UP"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

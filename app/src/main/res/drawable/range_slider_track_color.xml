@@ -1,0 +1,9 @@
+<!-- res/drawable/range_slider_track_color.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/background"
+        android:drawable="@color/trackBackground" />
+    <item
+        android:id="@android:id/progress"
+        android:drawable="@color/trackColor" />
+</layer-list>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="16dp"
+
+    android:background="@drawable/paymentborder"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/proposalimage"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/samplepro" />
+
+    <TextView
+        android:id="@+id/proid"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/proposalimage"
+        android:text="Proposal ID-001"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/proposalName"
+
+        android:layout_width="182dp"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/proid"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/proposalimage"
+        android:text="Green Acres Farm"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/date"
+
+        android:layout_width="166dp"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/proposalName"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/proposalimage"
+        android:text="Posted Date 2023/01/02"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:id="@+id/delete"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/deelete"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/delete"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/edit"
+        android:layout_marginTop="12dp"
+
+
+        android:src="@drawable/pen" />
+
+
+</RelativeLayout>

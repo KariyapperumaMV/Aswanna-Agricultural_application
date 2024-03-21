@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFFFF" /> <!-- White color for the shape -->
+    <stroke
+        android:width="6dp"
+        android:color="@color/BtnColour"/>         <!-- Border width in density-independent pixels (dp) -->
+      <!-- Black color for the border -->
+    <corners android:radius="@dimen/_500sdp" />
+    <size
+        android:width="@dimen/_500sdp"
+        android:height="@dimen/_500sdp" />
+</shape>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    tools:context=".Farmer_Home_Page">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:layout_weight="1"
+        android:background="@drawable/background_top"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="91dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="319dp"
+                android:layout_weight="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.044"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/aswanna_logo" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imageProfile"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_75sdp"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="120dp"
+                android:background="@drawable/profile_picture"
+                android:scaleType="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_corner_radius="@dimen/_45sdp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageSignOut"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginStart="265dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/round_logout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="403dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageProfile">
+
+                <TextView
+                    android:id="@+id/textName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textAlignment="center"
+                    android:textColor="#FEFAFD"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="244dp"
+                        android:layout_height="wrap_content"
+                        android:text="Farmer Level"
+                        android:textAlignment="viewEnd"
+                        android:textColor="#FEFAFD"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textLevel"
+                        android:layout_width="153dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="#FEFAFD"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="138dp"
+            android:layout_margin="@dimen/_10ssp"
+            app:srcCompat="@drawable/notices" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="177dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/viewReqBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_15ssp"
+                app:srcCompat="@drawable/investor_req_image" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_15ssp"
+
+                app:srcCompat="@drawable/my_project_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="wrap_content"
+                android:layout_height="144dp"
+                android:layout_margin="@dimen/_15ssp"
+                android:layout_weight="1"
+
+                app:srcCompat="@drawable/my_feedback_image" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="wrap_content"
+                android:layout_height="142dp"
+                android:layout_margin="@dimen/_15ssp"
+                android:layout_weight="1"
+
+                app:srcCompat="@drawable/user_guide_image" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/proposalIC"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="1dp"
+                app:layout_constraintBottom_toTopOf="@+id/proposalText"
+                app:layout_constraintStart_toEndOf="@+id/dashboardIC"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/proposal_farmer_home" />
+
+            <ImageView
+                android:id="@+id/menuIC"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/menuText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/menu_farmer_home" />
+
+            <ImageView
+                android:id="@+id/dashboardIC"
+                android:layout_width="36dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginBottom="1dp"
+                app:layout_constraintBottom_toTopOf="@+id/DashboardText"
+                app:layout_constraintEnd_toStartOf="@+id/proposalIC"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dashboard_farmerhome" />
+
+            <ImageView
+                android:id="@+id/ChatIC"
+                android:layout_width="61dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="1dp"
+                app:layout_constraintBottom_toTopOf="@+id/chatText"
+                app:layout_constraintEnd_toStartOf="@+id/menuIC"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/chat_farmer_home" />
+
+            <ImageView
+                android:id="@+id/addIC"
+                android:layout_width="66dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                app:layout_constraintBottom_toTopOf="@+id/addText"
+                app:layout_constraintEnd_toStartOf="@+id/ChatIC"
+                app:layout_constraintHorizontal_bias="0.475"
+                app:layout_constraintStart_toEndOf="@+id/proposalText"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/add_farmer_home" />
+
+            <TextView
+                android:id="@+id/DashboardText"
+                android:layout_width="71dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="DashBoard"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dashboardIC" />
+
+            <TextView
+                android:id="@+id/proposalText"
+                android:layout_width="64dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="Proposal"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/DashboardText"
+                app:layout_constraintTop_toBottomOf="@+id/proposalIC" />
+
+            <TextView
+                android:id="@+id/addText"
+                android:layout_width="66dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text=" Add New"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/chatText"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toEndOf="@+id/proposalText"
+                app:layout_constraintTop_toBottomOf="@+id/addIC" />
+
+            <TextView
+                android:id="@+id/menuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="Menu"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menuIC" />
+
+            <TextView
+                android:id="@+id/chatText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="7dp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="Messages"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/menuText"
+                app:layout_constraintTop_toBottomOf="@+id/ChatIC" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

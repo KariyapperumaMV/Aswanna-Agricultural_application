@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.Farmer_Request_View">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/investors_reques_top_background" />
+
+        <ImageView
+            android:id="@+id/BtnBACKView"
+            android:layout_width="57dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="@dimen/_26ssp"
+            app:srcCompat="@drawable/back"
+            android:layout_marginLeft="@dimen/_10ssp"/>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_3sdp">
+
+        <ImageView
+            android:id="@+id/pendingGreenBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/pending_req_green_farmer" />
+
+        <ImageView
+            android:id="@+id/acceptedWhiteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/accepted_farmerreq_white" />
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:name="com.example.aswanna.Fragment.FarmerSide_pending_request"
+        android:id="@+id/fragmentReqView"
+        android:layout_width="match_parent"
+        android:layout_height="585dp"
+        android:layout_marginBottom="1dp">
+
+    </androidx.fragment.app.FragmentContainerView>
+
+</LinearLayout>
